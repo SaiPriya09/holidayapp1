@@ -1,0 +1,7 @@
+<br>
+<h3>List of holidays in US 2015!!!</h3>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let holiday of holidaysList, let i = index">
+      <a mat-raised-button routerLink="/details/{{i}}">{{holiday.date | date}}: {{holiday.name}}</a>
+  </mat-list-item>
+</mat-list>

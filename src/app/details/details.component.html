@@ -1,0 +1,21 @@
+<br>
+
+<a mat-raised-button routerLink="/">Back To Home</a>
+<br>
+<hr>
+<br>
+<div *ngIf="holiday">
+  <h2>{{ holiday.name | uppercase }} Details</h2>
+  <div>
+    <span>Name: </span>{{holiday.name}}
+  </div>
+  <div>
+    <span>Date: </span>{{holiday.date | date}}
+  </div>
+  <div>
+    <span>Observed: </span>{{holiday.observed | date}}
+  </div>
+  <div>
+    <span>Is this a public holiday: </span>{{holiday.public}}
+  </div>
+</div>
